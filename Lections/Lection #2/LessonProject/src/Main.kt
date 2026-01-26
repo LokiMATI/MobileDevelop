@@ -152,4 +152,13 @@ fun main() {
     }
 
     val intArray = intArrayOf(1,2,3,4,5)
+
+    //Многомерный массив
+    var table : Array<Array<Int>> = Array(5, {Array(3, {0})})
+    table[0][0] = 1
+
+    for (row in table) {
+        for (cell in row) print("$cell\t")
+        println()
+    }
 }
